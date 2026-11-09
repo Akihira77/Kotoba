@@ -1,0 +1,96 @@
+import { article } from "./shared";
+
+export const ANIME_EXTRA = [
+  article(
+    "c-anime-3",
+    "anime",
+    "敬称: さん, さま, くん, ちゃん, dan Cara Memanggil Orang",
+    "敬称",
+    "Panduan honorifik Jepang yang sering muncul di anime, lengkap dengan konteks dan batasannya.",
+    [
+      "Dalam bahasa Jepang, orang biasanya dipanggil dengan 苗字 (nama keluarga) ditambah 敬称 (sebutan hormat). さん adalah sebutan paling umum dan netral, dapat dipakai untuk laki-laki maupun perempuan. さま lebih hormat dan sering muncul dalam layanan pelanggan, surat, serta doa; dalam percakapan sehari-hari, さま bisa terasa berlebihan bila ditujukan kepada teman.",
+      "くん umumnya dipakai untuk laki-laki yang lebih muda atau rekan setingkat, terutama di sekolah dan tempat kerja. ちゃん bersifat akrab dan sering dipakai untuk anak-anak, teman dekat, atau hewan; memakainya kepada orang yang belum akrab bisa terasa kurang sopan. 先生 dipakai untuk guru, dokter, dan beberapa profesional lain, bukan hanya 'guru' di sekolah.",
+      "先輩 (senpai) dan 後輩 (kouhai) menunjukkan hubungan senior-junior, bukan gelar resmi. Sebutan ini bisa berdiri sendiri atau digabung dengan nama. Hindari memakai さん, くん, atau ちゃん untuk diri sendiri. Dalam konteks bisnis, 様 sering dipakai untuk klien, dan 役職 (jabatan) seperti 部長 bisa menggantikan nama.",
+    ],
+    [
+      ["Netral", "さん, dapat dipakai untuk hampir semua orang"],
+      ["Hormat", "さま, sering untuk pelanggan, surat, dan doa"],
+      ["Akrab", "ちゃん, untuk anak-anak atau teman dekat"],
+      ["Relasi", "先輩 (senior) dan 後輩 (junior)"],
+    ],
+    [
+      ["敬称", "けいしょう", "keishou", "sebutan hormat"],
+      ["苗字", "みょうじ", "myouji", "nama keluarga"],
+      ["名前", "なまえ", "namae", "nama"],
+      ["呼び捨て", "よびすて", "yobisute", "memanggil tanpa sebutan hormat"],
+      ["上司", "じょうし", "joushi", "atasan"],
+      ["同僚", "どうりょう", "douryou", "rekan kerja"],
+    ],
+  ),
+  article(
+    "c-anime-4",
+    "anime",
+    "役割語: Mengapa Karakter Anime Bicara Berbeda",
+    "役割語",
+    "Mengenal role language, kata ganti orang pertama, dan akhiran kalimat yang khas fiksi.",
+    [
+      "役割語 (yakuwari-go), atau 'role language', adalah gaya bicara yang dipakai penulis untuk memberi kesan tertentu pada karakter. Seorang karakter bisa terdengar maskulin, feminin, tua, anggun, atau lucu melalui pilihan kata ganti dan akhiran kalimat. Gaya ini adalah konvensi fiksi, bukan cermin langsung cara semua orang dari kelompok tertentu berbicara.",
+      "Kata ganti orang pertama (一人称) yang sering muncul: わたし netral, わたくし sangat formal, あたし kasual dan sering diasosiasikan dengan perempuan, ぼく kasual-maskulin, おれ kasual-maskulin yang lebih tegas, dan わし terdengar seperti orang tua dalam fiksi. Di kehidupan nyata, pilihan ini dipengaruhi usia, gender, wilayah, dan situasi, tetapi tidak seragam.",
+      "Akhiran seperti 〜だぜ, 〜だわ, 〜かしら, 〜にゃ, dan 〜ござる sering dipakai untuk menandai karakter. 〜ござる misalnya terdengar arkais dan kadang dipakai karakter ninja atau samurai dalam cerita. Penggunaan di dunia nyata bisa terdengar teatrikal atau tidak wajar. Untuk belajar, kenali efek stilistiknya, lalu gunakan bentuk standar です・ます atau kasual biasa sesuai konteks.",
+    ],
+    [
+      ["Istilah", "役割語 (yakuwari-go), gaya bicara khas karakter"],
+      ["Kata ganti", "わたし, あたし, ぼく, おれ, わし"],
+      ["Akhiran fiksi", "〜だぜ, 〜だわ, 〜かしら, 〜にゃ, 〜ござる"],
+      ["Sifat", "Konvensi fiksi, bukan aturan absolut kehidupan nyata"],
+    ],
+    [
+      ["役割語", "やくわりご", "yakuwari-go", "gaya bicara khas karakter"],
+      ["一人称", "いちにんしょう", "ichininshou", "kata ganti orang pertama"],
+      ["語尾", "ごび", "gobi", "akhiran kalimat"],
+      ["男性的", "だんせいてき", "danseiteki", "bersifat maskulin"],
+      ["女性的", "じょせいてき", "joseiteki", "bersifat feminin"],
+      ["フィクション", "フィクション", "fikushon", "fiksi"],
+    ],
+    [
+      ["わたくし", "わたくし", "watakushi", "saya (sangat formal)", "formal", "Dipakai dalam pidato resmi, dokumen, atau situasi yang menuntut kesopanan tinggi."],
+      ["あたし", "あたし", "atashi", "aku (kasual, sering feminin)", "kasual", "Dipakai dalam percakapan santai; hindari dalam wawancara atau situasi formal."],
+      ["おれ", "おれ", "ore", "aku (kasual, maskulin)", "kasual", "Umum di antara teman dekat; bisa terdengar kasar bila dipakai kepada atasan."],
+      ["わし", "わし", "washi", "saya (terdengar tua/klasik)", "arkais", "Sering dipakai karakter tua atau bijak dalam fiksi; tidak lazim untuk pelajar muda di percakapan sehari-hari."],
+      ["〜にゃ", "〜にゃ", "〜nya", "Akhiran lucu/khas karakter", "anime", "Muncul sebagai gaya bicara karakter fiksi; jangan dianggap bahasa sehari-hari standar."],
+    ],
+  ),
+  article(
+    "c-anime-5",
+    "anime",
+    "Ungkapan Anime yang Sering Muncul dan Batas Pemakaiannya",
+    "アニメの台詞",
+    "Membedakan ungkapan dramatis yang aman dikenali dari kata yang sebaiknya tidak ditiru.",
+    [
+      "Banyak ungkapan anime sebenarnya berasal dari bahasa Jepang biasa, hanya diberi penekanan dan intonasi dramatis. 行くぞ ('ayo maju!') adalah ajakan kasual yang sering diucapkan karakter laki-laki; やれやれ ('ya ampun') menandakan kelelahan atau keheranan ringan; しょうがない ('mau bagaimana lagi') menerima situasi yang tidak bisa diubah.",
+      "Kata seperti なるほど ('begitu, ya') dan まさか ('tidak mungkin') juga lazim di percakapan nyata. Yang membedakan adalah cara penyampaiannya. Dalam anime, jeda, volume, dan ekspresi wajah dibuat berlebihan agar emosi terbaca. Menirunya mentah-mentah bisa terasa aneh, terutama di situasi formal.",
+      "Hindari meniru kata-kata permusuhan seperti てめえ, きさま, atau おのれ kecuali untuk memahami dialog. Kata-kata itu kasar, agresif, atau terasa kuno. Untuk berlatih, catat ungkapan yang muncul, cek register-nya, lalu gunakan versi sopan yang sesuai. Anime adalah bahan menyimak yang kaya, bukan buku frasa untuk semua situasi.",
+    ],
+    [
+      ["Aman dikenali", "行くぞ, やれやれ, しょうがない, なるほど, まさか"],
+      ["Hindari ditiru", "てめえ, きさま, おのれ (kasar/agresif)"],
+      ["Pembeda", "Intonasi dan gestur dramatis, bukan hanya kata"],
+      ["Saran", "Cek register dan gunakan versi sopan sesuai konteks"],
+    ],
+    [
+      ["台詞", "せりふ", "serifu", "dialog/ucapan dalam drama"],
+      ["演技", "えんぎ", "engi", "akting"],
+      ["誇張", "こちょう", "kochou", "berlebihan"],
+      ["文脈", "ぶんみゃく", "bunmyaku", "konteks"],
+      ["語尾", "ごび", "gobi", "akhiran kalimat"],
+      ["標準語", "ひょうじゅんご", "hyoujungo", "bahasa Jepang standar"],
+    ],
+    [
+      ["行くぞ", "いくぞ", "iku zo", "Ayo maju!", "kasual", "Ajakan tegas dalam situasi santai atau pertandingan; nadanya bisa terdengar maskulin."],
+      ["やれやれ", "やれやれ", "yare yare", "Ya ampun / aduh", "kasual", "Ungkapan lelah atau heran yang ringan; aman dalam percakapan santai."],
+      ["しょうがない", "しょうがない", "shou ga nai", "Mau bagaimana lagi", "kasual", "Menerima keadaan yang tidak bisa diubah; bentuk sopannya 仕方がありません."],
+      ["なるほど", "なるほど", "naruhodo", "Begitu, ya / saya mengerti", "standar", "Menunjukkan pemahaman; hindari mengucapkannya berulang kali seperti menginterogasi."],
+      ["まさか", "まさか", "masaka", "Tidak mungkin / jangan-jangan", "standar", "Ungkapan terkejut atau tidak percaya; nada menentukan apakah tulus atau sinis."],
+    ],
+  ),
+];
