@@ -1,0 +1,427 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme inline {
+  --font-sans: var(--font-sans-stack);
+  --font-jp: var(--font-jp-stack);
+  --font-serif-jp: var(--font-serif-jp-stack);
+
+  --color-paper: var(--c-bg);
+  --color-surface: var(--c-surface);
+  --color-surface-2: var(--c-surface-2);
+  --color-ink: var(--c-ink);
+  --color-muted: var(--c-muted);
+  --color-line: var(--c-line);
+  --color-brand: var(--c-brand);
+  --color-brand-strong: var(--c-brand-strong);
+  --color-brand-soft: var(--c-brand-soft);
+  --color-indigo-ink: var(--c-indigo);
+  --color-indigo-soft: var(--c-indigo-soft);
+  --color-matcha: var(--c-matcha);
+  --color-matcha-soft: var(--c-matcha-soft);
+  --color-gold: var(--c-gold);
+  --color-gold-soft: var(--c-gold-soft);
+
+  --shadow-soft: 0 1px 2px rgb(28 20 10 / 0.04), 0 10px 30px -18px rgb(28 20 10 / 0.25);
+  --shadow-lift: 0 2px 4px rgb(28 20 10 / 0.05), 0 18px 40px -20px rgb(28 20 10 / 0.35);
+
+  --animate-fade-in: fade-in 0.35s ease-out both;
+  --animate-fade-up: fade-up 0.45s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-pop: pop 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+  --animate-shimmer: shimmer 1.8s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-pop-in: pop-in 0.4s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+:root {
+  --font-sans-stack: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-jp-stack: "Hiragino Sans", "Yu Gothic", "Noto Sans JP", "Meiryo", "Droid Sans Fallback", sans-serif;
+  --font-serif-jp-stack: "Hiragino Mincho ProN", "Yu Mincho", "Noto Serif JP", serif;
+
+  --c-bg: #f6f1e7;
+  --c-surface: #fffdf8;
+  --c-surface-2: #efe7d9;
+  --c-ink: #221b13;
+  --c-muted: #71675a;
+  --c-line: #e3d8c6;
+  --c-brand: #c23d2c;
+  --c-brand-strong: #9c2a1b;
+  --c-brand-soft: #f8e5df;
+  --c-indigo: #33506f;
+  --c-indigo-soft: #e3eaf2;
+  --c-matcha: #4d7355;
+  --c-matcha-soft: #e4ede3;
+  --c-gold: #8c5f1d;
+  --c-gold-soft: #f6ecd6;
+
+  --grain-opacity: 0.5;
+  color-scheme: light;
+}
+
+.dark {
+  --c-bg: #100e0c;
+  --c-surface: #1a1714;
+  --c-surface-2: #241f19;
+  --c-ink: #f4eee3;
+  --c-muted: #a79a87;
+  --c-line: #332b22;
+  --c-brand: #e57a65;
+  --c-brand-strong: #f29480;
+  --c-brand-soft: #34201b;
+  --c-indigo: #93accb;
+  --c-indigo-soft: #1d2836;
+  --c-matcha: #8bb292;
+  --c-matcha-soft: #1b2a1f;
+  --c-gold: #d8ab5c;
+  --c-gold-soft: #2e2617;
+
+  --grain-opacity: 0.25;
+  color-scheme: dark;
+}
+
+@layer base {
+  * {
+    border-color: var(--c-line);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    min-height: 100dvh;
+    background-color: var(--c-bg);
+    background-image:
+      radial-gradient(1100px 520px at 12% -8%, color-mix(in srgb, var(--c-brand) 7%, transparent), transparent 60%),
+      radial-gradient(900px 520px at 92% 0%, color-mix(in srgb, var(--c-indigo) 7%, transparent), transparent 62%);
+    background-attachment: fixed;
+    color: var(--c-ink);
+    font-family: var(--font-sans-stack);
+    font-synthesis-weight: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: color-mix(in srgb, var(--c-brand) 26%, transparent);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--c-brand);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+
+  h1, h2, h3, h4 {
+    letter-spacing: -0.02em;
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button, [role="button"] {
+    touch-action: manipulation;
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: color-mix(in srgb, var(--c-muted) 28%, transparent);
+    border-radius: 999px;
+    border: 2px solid transparent;
+    background-clip: padding-box;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: color-mix(in srgb, var(--c-muted) 48%, transparent);
+    background-clip: padding-box;
+  }
+}
+
+@layer utilities {
+  .font-jp {
+    font-family: var(--font-jp-stack);
+  }
+  .font-serif-jp {
+    font-family: var(--font-serif-jp-stack);
+  }
+  .text-balance {
+    text-wrap: balance;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+  .safe-bottom {
+    padding-bottom: max(0.5rem, env(safe-area-inset-bottom));
+  }
+  .card-hover {
+    transition: transform 220ms cubic-bezier(0.22, 1, 0.36, 1), box-shadow 220ms ease, border-color 220ms ease;
+  }
+  .card-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lift);
+  }
+  .bg-seigaiha {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30' viewBox='0 0 60 30'%3E%3Cg fill='none' stroke='%23c9b79c' stroke-opacity='0.28' stroke-width='1'%3E%3Ccircle cx='0' cy='15' r='14'/%3E%3Ccircle cx='0' cy='15' r='9'/%3E%3Ccircle cx='0' cy='15' r='4'/%3E%3Ccircle cx='30' cy='0' r='14'/%3E%3Ccircle cx='30' cy='0' r='9'/%3E%3Ccircle cx='30' cy='0' r='4'/%3E%3Ccircle cx='30' cy='30' r='14'/%3E%3Ccircle cx='30' cy='30' r='9'/%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3Ccircle cx='60' cy='15' r='14'/%3E%3Ccircle cx='60' cy='15' r='9'/%3E%3Ccircle cx='60' cy='15' r='4'/%3E%3C/g%3E%3C/svg%3E");
+    background-size: 60px 30px;
+  }
+  .pattern-opacity {
+    opacity: 0.16;
+  }
+  .dark .bg-seigaiha {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='30' viewBox='0 0 60 30'%3E%3Cg fill='none' stroke='%23e2c9a4' stroke-opacity='0.22' stroke-width='1'%3E%3Ccircle cx='0' cy='15' r='14'/%3E%3Ccircle cx='0' cy='15' r='9'/%3E%3Ccircle cx='0' cy='15' r='4'/%3E%3Ccircle cx='30' cy='0' r='14'/%3E%3Ccircle cx='30' cy='0' r='9'/%3E%3Ccircle cx='30' cy='0' r='4'/%3E%3Ccircle cx='30' cy='30' r='14'/%3E%3Ccircle cx='30' cy='30' r='9'/%3E%3Ccircle cx='30' cy='30' r='4'/%3E%3Ccircle cx='60' cy='15' r='14'/%3E%3Ccircle cx='60' cy='15' r='9'/%3E%3Ccircle cx='60' cy='15' r='4'/%3E%3C/g%3E%3C/svg%3E");
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop {
+  0% { opacity: 0; transform: scale(0.94); }
+  100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pop-in {
+  0% { opacity: 0; transform: scale(0.86) rotate(-3deg); }
+  60% { transform: scale(1.03) rotate(1deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); }
+}
+
+@keyframes shimmer {
+  0% { background-position: -400px 0; }
+  100% { background-position: 400px 0; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@keyframes pulse-ring {
+  0% { transform: scale(0.95); opacity: 0.6; }
+  70% { transform: scale(1.15); opacity: 0; }
+  100% { opacity: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Unlayered on purpose: Tailwind utilities have higher priority than @layer base,
+   so dark accent overrides must sit outside every layer. */
+.dark .bg-brand.text-white,
+.dark .bg-brand .text-white {
+  color: #1c110b;
+}
+
+.dark .bg-brand .text-white\/80 {
+  color: rgb(28 17 11 / 0.82);
+}
+
+.dark .bg-indigo.text-white,
+.dark .bg-indigo .text-white {
+  color: #101820;
+}
+
+@media (max-width: 1023px) {
+  html {
+    scroll-padding-bottom: 7rem;
+  }
+
+  :focus-visible {
+    scroll-margin-block: 6rem;
+  }
+}
+
+/* Latihan menulis: garis bantu, goresan contoh, dan goresan pengguna. */
+.writing-grid-line {
+  stroke: var(--c-line);
+  stroke-width: 0.45;
+  fill: none;
+  opacity: 0.75;
+  vector-effect: non-scaling-stroke;
+}
+.writing-guide-stroke {
+  fill: none;
+  stroke: var(--c-muted);
+  stroke-width: 1.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.24;
+  vector-effect: non-scaling-stroke;
+}
+.writing-done-stroke {
+  fill: none;
+  stroke: var(--c-matcha);
+  stroke-width: 2.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.writing-active-stroke {
+  fill: none;
+  stroke: var(--c-brand);
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.writing-reference-stroke {
+  fill: none;
+  stroke: var(--c-ink);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  opacity: 0.82;
+  vector-effect: non-scaling-stroke;
+}
+.writing-draw-stroke {
+  fill: none;
+  stroke: var(--c-brand);
+  stroke-width: 2.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vector-effect: non-scaling-stroke;
+}
+.writing-stroke-animated {
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: writing-stroke-draw 0.62s ease-out forwards;
+}
+.writing-stroke-number {
+  fill: var(--c-muted);
+  font-size: 4.4px;
+  font-weight: 700;
+  font-family: var(--font-sans-stack);
+}
+.writing-stroke-number-active {
+  fill: var(--c-brand);
+}
+.writing-canvas {
+  touch-action: none;
+  cursor: crosshair;
+}
+@keyframes writing-stroke-draw {
+  to { stroke-dashoffset: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .writing-stroke-animated {
+    animation: none;
+    stroke-dashoffset: 0;
+  }
+}
+
+.writing-canvas-surface {
+  background-color: var(--c-surface);
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--c-line) 70%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--c-line) 70%, transparent) 1px, transparent 1px);
+  background-size: 25% 25%;
+  background-position: center;
+}
+
+
+/* Teater cerita: panggung, karakter, balon dialog, dan efek cuaca. */
+.story-stage {
+  background: #e9dfcd;
+}
+.story-character {
+  transform-origin: 50% 100%;
+}
+.story-enter-fade {
+  animation: story-enter-fade 0.5s ease-out both;
+}
+.story-enter-left {
+  animation: story-enter-left 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.story-enter-right {
+  animation: story-enter-right 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.story-idle {
+  animation: story-idle 5.2s ease-in-out infinite;
+}
+.story-idle-active {
+  animation-duration: 3.2s;
+}
+.story-bubble {
+  animation: story-bubble-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+.story-rain-drop {
+  position: absolute;
+  top: -16%;
+  width: 1.5px;
+  height: 15%;
+  border-radius: 999px;
+  background: linear-gradient(to bottom, rgb(255 255 255 / 0), rgb(255 255 255 / 0.7));
+  animation: story-rain-fall linear infinite;
+}
+.story-snow-flake {
+  position: absolute;
+  top: -8%;
+  width: 5px;
+  height: 5px;
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.8);
+  animation: story-snow-fall 6s linear infinite;
+}
+@keyframes story-enter-fade {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes story-enter-left {
+  from { opacity: 0; transform: translate(-24px, 8px); }
+  to { opacity: 1; transform: translate(0, 0); }
+}
+@keyframes story-enter-right {
+  from { opacity: 0; transform: translate(24px, 8px); }
+  to { opacity: 1; transform: translate(0, 0); }
+}
+@keyframes story-idle {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-2px); }
+}
+@keyframes story-bubble-in {
+  from { opacity: 0; transform: translateY(8px) scale(0.99); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes story-rain-fall {
+  from { transform: translateY(0); }
+  to { transform: translateY(760%); }
+}
+@keyframes story-snow-fall {
+  from { transform: translateY(0) translateX(0); }
+  50% { transform: translateY(330%) translateX(8px); }
+  to { transform: translateY(700%) translateX(-4px); }
+}
+

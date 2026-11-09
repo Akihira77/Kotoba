@@ -1,0 +1,18 @@
+{
+  "name": "Kotoba — Belajar Bahasa Jepang",
+  "short_name": "Kotoba",
+  "description": "Platform belajar bahasa Jepang untuk penutur bahasa Indonesia: kana, kanji, kosakata, tata bahasa, latihan, permainan, dan simulasi JLPT.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f6f1e7",
+  "theme_color": "#c23d2c",
+  "lang": "id",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
