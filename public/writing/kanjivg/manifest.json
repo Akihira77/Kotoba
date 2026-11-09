@@ -1,0 +1,1305 @@
+{
+  "project": "KanjiVG",
+  "commit": "610091ce618cf757ed1357a8954cd65283e015d6",
+  "license": "CC BY-SA 3.0",
+  "attribution": "Ulrich Apel and KanjiVG contributors",
+  "source": "https://github.com/KanjiVG/kanjivg",
+  "characters": 259,
+  "files": [
+    {
+      "character": "あ",
+      "file": "03042.json",
+      "strokes": 3
+    },
+    {
+      "character": "ア",
+      "file": "030a2.json",
+      "strokes": 2
+    },
+    {
+      "character": "い",
+      "file": "03044.json",
+      "strokes": 2
+    },
+    {
+      "character": "イ",
+      "file": "030a4.json",
+      "strokes": 2
+    },
+    {
+      "character": "う",
+      "file": "03046.json",
+      "strokes": 2
+    },
+    {
+      "character": "ウ",
+      "file": "030a6.json",
+      "strokes": 3
+    },
+    {
+      "character": "え",
+      "file": "03048.json",
+      "strokes": 2
+    },
+    {
+      "character": "エ",
+      "file": "030a8.json",
+      "strokes": 3
+    },
+    {
+      "character": "お",
+      "file": "0304a.json",
+      "strokes": 3
+    },
+    {
+      "character": "オ",
+      "file": "030aa.json",
+      "strokes": 3
+    },
+    {
+      "character": "か",
+      "file": "0304b.json",
+      "strokes": 3
+    },
+    {
+      "character": "カ",
+      "file": "030ab.json",
+      "strokes": 2
+    },
+    {
+      "character": "が",
+      "file": "0304c.json",
+      "strokes": 5
+    },
+    {
+      "character": "ガ",
+      "file": "030ac.json",
+      "strokes": 4
+    },
+    {
+      "character": "き",
+      "file": "0304d.json",
+      "strokes": 4
+    },
+    {
+      "character": "キ",
+      "file": "030ad.json",
+      "strokes": 3
+    },
+    {
+      "character": "ぎ",
+      "file": "0304e.json",
+      "strokes": 6
+    },
+    {
+      "character": "ギ",
+      "file": "030ae.json",
+      "strokes": 5
+    },
+    {
+      "character": "く",
+      "file": "0304f.json",
+      "strokes": 1
+    },
+    {
+      "character": "ク",
+      "file": "030af.json",
+      "strokes": 2
+    },
+    {
+      "character": "ぐ",
+      "file": "03050.json",
+      "strokes": 3
+    },
+    {
+      "character": "グ",
+      "file": "030b0.json",
+      "strokes": 4
+    },
+    {
+      "character": "け",
+      "file": "03051.json",
+      "strokes": 3
+    },
+    {
+      "character": "ケ",
+      "file": "030b1.json",
+      "strokes": 3
+    },
+    {
+      "character": "げ",
+      "file": "03052.json",
+      "strokes": 5
+    },
+    {
+      "character": "ゲ",
+      "file": "030b2.json",
+      "strokes": 5
+    },
+    {
+      "character": "こ",
+      "file": "03053.json",
+      "strokes": 2
+    },
+    {
+      "character": "コ",
+      "file": "030b3.json",
+      "strokes": 2
+    },
+    {
+      "character": "ご",
+      "file": "03054.json",
+      "strokes": 4
+    },
+    {
+      "character": "ゴ",
+      "file": "030b4.json",
+      "strokes": 4
+    },
+    {
+      "character": "さ",
+      "file": "03055.json",
+      "strokes": 3
+    },
+    {
+      "character": "サ",
+      "file": "030b5.json",
+      "strokes": 3
+    },
+    {
+      "character": "ざ",
+      "file": "03056.json",
+      "strokes": 5
+    },
+    {
+      "character": "ザ",
+      "file": "030b6.json",
+      "strokes": 5
+    },
+    {
+      "character": "し",
+      "file": "03057.json",
+      "strokes": 1
+    },
+    {
+      "character": "シ",
+      "file": "030b7.json",
+      "strokes": 3
+    },
+    {
+      "character": "じ",
+      "file": "03058.json",
+      "strokes": 3
+    },
+    {
+      "character": "ジ",
+      "file": "030b8.json",
+      "strokes": 5
+    },
+    {
+      "character": "す",
+      "file": "03059.json",
+      "strokes": 2
+    },
+    {
+      "character": "ス",
+      "file": "030b9.json",
+      "strokes": 2
+    },
+    {
+      "character": "ず",
+      "file": "0305a.json",
+      "strokes": 4
+    },
+    {
+      "character": "ズ",
+      "file": "030ba.json",
+      "strokes": 4
+    },
+    {
+      "character": "せ",
+      "file": "0305b.json",
+      "strokes": 3
+    },
+    {
+      "character": "セ",
+      "file": "030bb.json",
+      "strokes": 2
+    },
+    {
+      "character": "ぜ",
+      "file": "0305c.json",
+      "strokes": 5
+    },
+    {
+      "character": "ゼ",
+      "file": "030bc.json",
+      "strokes": 4
+    },
+    {
+      "character": "そ",
+      "file": "0305d.json",
+      "strokes": 1
+    },
+    {
+      "character": "ソ",
+      "file": "030bd.json",
+      "strokes": 2
+    },
+    {
+      "character": "ぞ",
+      "file": "0305e.json",
+      "strokes": 3
+    },
+    {
+      "character": "ゾ",
+      "file": "030be.json",
+      "strokes": 4
+    },
+    {
+      "character": "た",
+      "file": "0305f.json",
+      "strokes": 4
+    },
+    {
+      "character": "タ",
+      "file": "030bf.json",
+      "strokes": 3
+    },
+    {
+      "character": "だ",
+      "file": "03060.json",
+      "strokes": 6
+    },
+    {
+      "character": "ダ",
+      "file": "030c0.json",
+      "strokes": 5
+    },
+    {
+      "character": "ち",
+      "file": "03061.json",
+      "strokes": 2
+    },
+    {
+      "character": "チ",
+      "file": "030c1.json",
+      "strokes": 3
+    },
+    {
+      "character": "ぢ",
+      "file": "03062.json",
+      "strokes": 4
+    },
+    {
+      "character": "ヂ",
+      "file": "030c2.json",
+      "strokes": 5
+    },
+    {
+      "character": "つ",
+      "file": "03064.json",
+      "strokes": 1
+    },
+    {
+      "character": "ツ",
+      "file": "030c4.json",
+      "strokes": 3
+    },
+    {
+      "character": "づ",
+      "file": "03065.json",
+      "strokes": 3
+    },
+    {
+      "character": "ヅ",
+      "file": "030c5.json",
+      "strokes": 5
+    },
+    {
+      "character": "て",
+      "file": "03066.json",
+      "strokes": 1
+    },
+    {
+      "character": "テ",
+      "file": "030c6.json",
+      "strokes": 3
+    },
+    {
+      "character": "で",
+      "file": "03067.json",
+      "strokes": 3
+    },
+    {
+      "character": "デ",
+      "file": "030c7.json",
+      "strokes": 5
+    },
+    {
+      "character": "と",
+      "file": "03068.json",
+      "strokes": 2
+    },
+    {
+      "character": "ト",
+      "file": "030c8.json",
+      "strokes": 2
+    },
+    {
+      "character": "ど",
+      "file": "03069.json",
+      "strokes": 4
+    },
+    {
+      "character": "ド",
+      "file": "030c9.json",
+      "strokes": 4
+    },
+    {
+      "character": "な",
+      "file": "0306a.json",
+      "strokes": 4
+    },
+    {
+      "character": "ナ",
+      "file": "030ca.json",
+      "strokes": 2
+    },
+    {
+      "character": "に",
+      "file": "0306b.json",
+      "strokes": 3
+    },
+    {
+      "character": "ニ",
+      "file": "030cb.json",
+      "strokes": 2
+    },
+    {
+      "character": "ぬ",
+      "file": "0306c.json",
+      "strokes": 2
+    },
+    {
+      "character": "ヌ",
+      "file": "030cc.json",
+      "strokes": 2
+    },
+    {
+      "character": "ね",
+      "file": "0306d.json",
+      "strokes": 2
+    },
+    {
+      "character": "ネ",
+      "file": "030cd.json",
+      "strokes": 4
+    },
+    {
+      "character": "の",
+      "file": "0306e.json",
+      "strokes": 1
+    },
+    {
+      "character": "ノ",
+      "file": "030ce.json",
+      "strokes": 1
+    },
+    {
+      "character": "は",
+      "file": "0306f.json",
+      "strokes": 3
+    },
+    {
+      "character": "ハ",
+      "file": "030cf.json",
+      "strokes": 2
+    },
+    {
+      "character": "ば",
+      "file": "03070.json",
+      "strokes": 5
+    },
+    {
+      "character": "バ",
+      "file": "030d0.json",
+      "strokes": 4
+    },
+    {
+      "character": "ぱ",
+      "file": "03071.json",
+      "strokes": 4
+    },
+    {
+      "character": "パ",
+      "file": "030d1.json",
+      "strokes": 3
+    },
+    {
+      "character": "ひ",
+      "file": "03072.json",
+      "strokes": 1
+    },
+    {
+      "character": "ヒ",
+      "file": "030d2.json",
+      "strokes": 2
+    },
+    {
+      "character": "び",
+      "file": "03073.json",
+      "strokes": 3
+    },
+    {
+      "character": "ビ",
+      "file": "030d3.json",
+      "strokes": 4
+    },
+    {
+      "character": "ぴ",
+      "file": "03074.json",
+      "strokes": 2
+    },
+    {
+      "character": "ピ",
+      "file": "030d4.json",
+      "strokes": 3
+    },
+    {
+      "character": "ふ",
+      "file": "03075.json",
+      "strokes": 4
+    },
+    {
+      "character": "フ",
+      "file": "030d5.json",
+      "strokes": 1
+    },
+    {
+      "character": "ぶ",
+      "file": "03076.json",
+      "strokes": 6
+    },
+    {
+      "character": "ブ",
+      "file": "030d6.json",
+      "strokes": 3
+    },
+    {
+      "character": "ぷ",
+      "file": "03077.json",
+      "strokes": 5
+    },
+    {
+      "character": "プ",
+      "file": "030d7.json",
+      "strokes": 2
+    },
+    {
+      "character": "へ",
+      "file": "03078.json",
+      "strokes": 1
+    },
+    {
+      "character": "ヘ",
+      "file": "030d8.json",
+      "strokes": 1
+    },
+    {
+      "character": "べ",
+      "file": "03079.json",
+      "strokes": 3
+    },
+    {
+      "character": "ベ",
+      "file": "030d9.json",
+      "strokes": 3
+    },
+    {
+      "character": "ぺ",
+      "file": "0307a.json",
+      "strokes": 2
+    },
+    {
+      "character": "ペ",
+      "file": "030da.json",
+      "strokes": 2
+    },
+    {
+      "character": "ほ",
+      "file": "0307b.json",
+      "strokes": 4
+    },
+    {
+      "character": "ホ",
+      "file": "030db.json",
+      "strokes": 4
+    },
+    {
+      "character": "ぼ",
+      "file": "0307c.json",
+      "strokes": 6
+    },
+    {
+      "character": "ボ",
+      "file": "030dc.json",
+      "strokes": 6
+    },
+    {
+      "character": "ぽ",
+      "file": "0307d.json",
+      "strokes": 5
+    },
+    {
+      "character": "ポ",
+      "file": "030dd.json",
+      "strokes": 5
+    },
+    {
+      "character": "ま",
+      "file": "0307e.json",
+      "strokes": 3
+    },
+    {
+      "character": "マ",
+      "file": "030de.json",
+      "strokes": 2
+    },
+    {
+      "character": "み",
+      "file": "0307f.json",
+      "strokes": 2
+    },
+    {
+      "character": "ミ",
+      "file": "030df.json",
+      "strokes": 3
+    },
+    {
+      "character": "む",
+      "file": "03080.json",
+      "strokes": 3
+    },
+    {
+      "character": "ム",
+      "file": "030e0.json",
+      "strokes": 2
+    },
+    {
+      "character": "め",
+      "file": "03081.json",
+      "strokes": 2
+    },
+    {
+      "character": "メ",
+      "file": "030e1.json",
+      "strokes": 2
+    },
+    {
+      "character": "も",
+      "file": "03082.json",
+      "strokes": 3
+    },
+    {
+      "character": "モ",
+      "file": "030e2.json",
+      "strokes": 3
+    },
+    {
+      "character": "ゃ",
+      "file": "03083.json",
+      "strokes": 3
+    },
+    {
+      "character": "ャ",
+      "file": "030e3.json",
+      "strokes": 2
+    },
+    {
+      "character": "や",
+      "file": "03084.json",
+      "strokes": 3
+    },
+    {
+      "character": "ヤ",
+      "file": "030e4.json",
+      "strokes": 2
+    },
+    {
+      "character": "ゅ",
+      "file": "03085.json",
+      "strokes": 2
+    },
+    {
+      "character": "ュ",
+      "file": "030e5.json",
+      "strokes": 2
+    },
+    {
+      "character": "ゆ",
+      "file": "03086.json",
+      "strokes": 2
+    },
+    {
+      "character": "ユ",
+      "file": "030e6.json",
+      "strokes": 2
+    },
+    {
+      "character": "ょ",
+      "file": "03087.json",
+      "strokes": 2
+    },
+    {
+      "character": "ョ",
+      "file": "030e7.json",
+      "strokes": 3
+    },
+    {
+      "character": "よ",
+      "file": "03088.json",
+      "strokes": 2
+    },
+    {
+      "character": "ヨ",
+      "file": "030e8.json",
+      "strokes": 3
+    },
+    {
+      "character": "ら",
+      "file": "03089.json",
+      "strokes": 2
+    },
+    {
+      "character": "ラ",
+      "file": "030e9.json",
+      "strokes": 2
+    },
+    {
+      "character": "り",
+      "file": "0308a.json",
+      "strokes": 2
+    },
+    {
+      "character": "リ",
+      "file": "030ea.json",
+      "strokes": 2
+    },
+    {
+      "character": "る",
+      "file": "0308b.json",
+      "strokes": 1
+    },
+    {
+      "character": "ル",
+      "file": "030eb.json",
+      "strokes": 2
+    },
+    {
+      "character": "れ",
+      "file": "0308c.json",
+      "strokes": 2
+    },
+    {
+      "character": "レ",
+      "file": "030ec.json",
+      "strokes": 1
+    },
+    {
+      "character": "ろ",
+      "file": "0308d.json",
+      "strokes": 1
+    },
+    {
+      "character": "ロ",
+      "file": "030ed.json",
+      "strokes": 3
+    },
+    {
+      "character": "わ",
+      "file": "0308f.json",
+      "strokes": 2
+    },
+    {
+      "character": "ワ",
+      "file": "030ef.json",
+      "strokes": 2
+    },
+    {
+      "character": "を",
+      "file": "03092.json",
+      "strokes": 3
+    },
+    {
+      "character": "ヲ",
+      "file": "030f2.json",
+      "strokes": 3
+    },
+    {
+      "character": "ん",
+      "file": "03093.json",
+      "strokes": 1
+    },
+    {
+      "character": "ン",
+      "file": "030f3.json",
+      "strokes": 2
+    },
+    {
+      "character": "安",
+      "file": "05b89.json",
+      "strokes": 6
+    },
+    {
+      "character": "一",
+      "file": "04e00.json",
+      "strokes": 1
+    },
+    {
+      "character": "員",
+      "file": "054e1.json",
+      "strokes": 10
+    },
+    {
+      "character": "飲",
+      "file": "098f2.json",
+      "strokes": 12
+    },
+    {
+      "character": "右",
+      "file": "053f3.json",
+      "strokes": 5
+    },
+    {
+      "character": "雨",
+      "file": "096e8.json",
+      "strokes": 8
+    },
+    {
+      "character": "影",
+      "file": "05f71.json",
+      "strokes": 15
+    },
+    {
+      "character": "駅",
+      "file": "099c5.json",
+      "strokes": 14
+    },
+    {
+      "character": "円",
+      "file": "05186.json",
+      "strokes": 4
+    },
+    {
+      "character": "下",
+      "file": "04e0b.json",
+      "strokes": 3
+    },
+    {
+      "character": "何",
+      "file": "04f55.json",
+      "strokes": 7
+    },
+    {
+      "character": "火",
+      "file": "0706b.json",
+      "strokes": 4
+    },
+    {
+      "character": "花",
+      "file": "082b1.json",
+      "strokes": 7
+    },
+    {
+      "character": "会",
+      "file": "04f1a.json",
+      "strokes": 6
+    },
+    {
+      "character": "改",
+      "file": "06539.json",
+      "strokes": 7
+    },
+    {
+      "character": "概",
+      "file": "06982.json",
+      "strokes": 14
+    },
+    {
+      "character": "確",
+      "file": "078ba.json",
+      "strokes": 15
+    },
+    {
+      "character": "学",
+      "file": "05b66.json",
+      "strokes": 8
+    },
+    {
+      "character": "関",
+      "file": "095a2.json",
+      "strokes": 14
+    },
+    {
+      "character": "気",
+      "file": "06c17.json",
+      "strokes": 6
+    },
+    {
+      "character": "休",
+      "file": "04f11.json",
+      "strokes": 6
+    },
+    {
+      "character": "魚",
+      "file": "09b5a.json",
+      "strokes": 11
+    },
+    {
+      "character": "教",
+      "file": "06559.json",
+      "strokes": 11
+    },
+    {
+      "character": "響",
+      "file": "097ff.json",
+      "strokes": 20
+    },
+    {
+      "character": "金",
+      "file": "091d1.json",
+      "strokes": 8
+    },
+    {
+      "character": "九",
+      "file": "04e5d.json",
+      "strokes": 2
+    },
+    {
+      "character": "空",
+      "file": "07a7a.json",
+      "strokes": 8
+    },
+    {
+      "character": "係",
+      "file": "04fc2.json",
+      "strokes": 9
+    },
+    {
+      "character": "傾",
+      "file": "050be.json",
+      "strokes": 13
+    },
+    {
+      "character": "経",
+      "file": "07d4c.json",
+      "strokes": 11
+    },
+    {
+      "character": "月",
+      "file": "06708.json",
+      "strokes": 4
+    },
+    {
+      "character": "犬",
+      "file": "072ac.json",
+      "strokes": 4
+    },
+    {
+      "character": "献",
+      "file": "0732e.json",
+      "strokes": 13
+    },
+    {
+      "character": "見",
+      "file": "0898b.json",
+      "strokes": 7
+    },
+    {
+      "character": "古",
+      "file": "053e4.json",
+      "strokes": 5
+    },
+    {
+      "character": "五",
+      "file": "04e94.json",
+      "strokes": 4
+    },
+    {
+      "character": "後",
+      "file": "05f8c.json",
+      "strokes": 9
+    },
+    {
+      "character": "語",
+      "file": "08a9e.json",
+      "strokes": 14
+    },
+    {
+      "character": "向",
+      "file": "05411.json",
+      "strokes": 6
+    },
+    {
+      "character": "校",
+      "file": "06821.json",
+      "strokes": 10
+    },
+    {
+      "character": "行",
+      "file": "0884c.json",
+      "strokes": 6
+    },
+    {
+      "character": "貢",
+      "file": "08ca2.json",
+      "strokes": 10
+    },
+    {
+      "character": "高",
+      "file": "09ad8.json",
+      "strokes": 10
+    },
+    {
+      "character": "今",
+      "file": "04eca.json",
+      "strokes": 4
+    },
+    {
+      "character": "左",
+      "file": "05de6.json",
+      "strokes": 5
+    },
+    {
+      "character": "済",
+      "file": "06e08.json",
+      "strokes": 11
+    },
+    {
+      "character": "三",
+      "file": "04e09.json",
+      "strokes": 3
+    },
+    {
+      "character": "山",
+      "file": "05c71.json",
+      "strokes": 3
+    },
+    {
+      "character": "四",
+      "file": "056db.json",
+      "strokes": 5
+    },
+    {
+      "character": "子",
+      "file": "05b50.json",
+      "strokes": 3
+    },
+    {
+      "character": "私",
+      "file": "079c1.json",
+      "strokes": 7
+    },
+    {
+      "character": "時",
+      "file": "06642.json",
+      "strokes": 10
+    },
+    {
+      "character": "治",
+      "file": "06cbb.json",
+      "strokes": 8
+    },
+    {
+      "character": "七",
+      "file": "04e03.json",
+      "strokes": 2
+    },
+    {
+      "character": "社",
+      "file": "0793e.json",
+      "strokes": 7
+    },
+    {
+      "character": "車",
+      "file": "08eca.json",
+      "strokes": 7
+    },
+    {
+      "character": "十",
+      "file": "05341.json",
+      "strokes": 2
+    },
+    {
+      "character": "出",
+      "file": "051fa.json",
+      "strokes": 5
+    },
+    {
+      "character": "書",
+      "file": "066f8.json",
+      "strokes": 10
+    },
+    {
+      "character": "女",
+      "file": "05973.json",
+      "strokes": 3
+    },
+    {
+      "character": "小",
+      "file": "05c0f.json",
+      "strokes": 3
+    },
+    {
+      "character": "上",
+      "file": "04e0a.json",
+      "strokes": 3
+    },
+    {
+      "character": "情",
+      "file": "060c5.json",
+      "strokes": 11
+    },
+    {
+      "character": "食",
+      "file": "098df.json",
+      "strokes": 9
+    },
+    {
+      "character": "新",
+      "file": "065b0.json",
+      "strokes": 13
+    },
+    {
+      "character": "人",
+      "file": "04eba.json",
+      "strokes": 2
+    },
+    {
+      "character": "水",
+      "file": "06c34.json",
+      "strokes": 4
+    },
+    {
+      "character": "政",
+      "file": "0653f.json",
+      "strokes": 9
+    },
+    {
+      "character": "生",
+      "file": "0751f.json",
+      "strokes": 5
+    },
+    {
+      "character": "先",
+      "file": "05148.json",
+      "strokes": 6
+    },
+    {
+      "character": "千",
+      "file": "05343.json",
+      "strokes": 3
+    },
+    {
+      "character": "川",
+      "file": "05ddd.json",
+      "strokes": 3
+    },
+    {
+      "character": "前",
+      "file": "0524d.json",
+      "strokes": 9
+    },
+    {
+      "character": "善",
+      "file": "05584.json",
+      "strokes": 12
+    },
+    {
+      "character": "大",
+      "file": "05927.json",
+      "strokes": 3
+    },
+    {
+      "character": "題",
+      "file": "0984c.json",
+      "strokes": 18
+    },
+    {
+      "character": "男",
+      "file": "07537.json",
+      "strokes": 7
+    },
+    {
+      "character": "中",
+      "file": "04e2d.json",
+      "strokes": 4
+    },
+    {
+      "character": "長",
+      "file": "09577.json",
+      "strokes": 8
+    },
+    {
+      "character": "鳥",
+      "file": "09ce5.json",
+      "strokes": 11
+    },
+    {
+      "character": "天",
+      "file": "05929.json",
+      "strokes": 4
+    },
+    {
+      "character": "田",
+      "file": "07530.json",
+      "strokes": 5
+    },
+    {
+      "character": "電",
+      "file": "096fb.json",
+      "strokes": 13
+    },
+    {
+      "character": "土",
+      "file": "0571f.json",
+      "strokes": 3
+    },
+    {
+      "character": "読",
+      "file": "08aad.json",
+      "strokes": 14
+    },
+    {
+      "character": "二",
+      "file": "04e8c.json",
+      "strokes": 2
+    },
+    {
+      "character": "肉",
+      "file": "08089.json",
+      "strokes": 6
+    },
+    {
+      "character": "日",
+      "file": "065e5.json",
+      "strokes": 4
+    },
+    {
+      "character": "入",
+      "file": "05165.json",
+      "strokes": 2
+    },
+    {
+      "character": "年",
+      "file": "05e74.json",
+      "strokes": 6
+    },
+    {
+      "character": "買",
+      "file": "08cb7.json",
+      "strokes": 12
+    },
+    {
+      "character": "白",
+      "file": "0767d.json",
+      "strokes": 5
+    },
+    {
+      "character": "八",
+      "file": "0516b.json",
+      "strokes": 2
+    },
+    {
+      "character": "半",
+      "file": "0534a.json",
+      "strokes": 5
+    },
+    {
+      "character": "百",
+      "file": "0767e.json",
+      "strokes": 6
+    },
+    {
+      "character": "父",
+      "file": "07236.json",
+      "strokes": 4
+    },
+    {
+      "character": "分",
+      "file": "05206.json",
+      "strokes": 4
+    },
+    {
+      "character": "聞",
+      "file": "0805e.json",
+      "strokes": 14
+    },
+    {
+      "character": "母",
+      "file": "06bcd.json",
+      "strokes": 5
+    },
+    {
+      "character": "報",
+      "file": "05831.json",
+      "strokes": 12
+    },
+    {
+      "character": "法",
+      "file": "06cd5.json",
+      "strokes": 8
+    },
+    {
+      "character": "本",
+      "file": "0672c.json",
+      "strokes": 5
+    },
+    {
+      "character": "万",
+      "file": "04e07.json",
+      "strokes": 3
+    },
+    {
+      "character": "名",
+      "file": "0540d.json",
+      "strokes": 6
+    },
+    {
+      "character": "木",
+      "file": "06728.json",
+      "strokes": 4
+    },
+    {
+      "character": "問",
+      "file": "0554f.json",
+      "strokes": 11
+    },
+    {
+      "character": "友",
+      "file": "053cb.json",
+      "strokes": 4
+    },
+    {
+      "character": "来",
+      "file": "06765.json",
+      "strokes": 7
+    },
+    {
+      "character": "律",
+      "file": "05f8b.json",
+      "strokes": 9
+    },
+    {
+      "character": "六",
+      "file": "0516d.json",
+      "strokes": 4
+    },
+    {
+      "character": "話",
+      "file": "08a71.json",
+      "strokes": 13
+    }
+  ]
+}
