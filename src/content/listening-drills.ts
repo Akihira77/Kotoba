@@ -1,0 +1,223 @@
+import type { JLPTLevel } from "@/lib/types";
+
+export interface ListeningDrill {
+  id: string;
+  level: JLPTLevel;
+  focus: string;
+  prompt: string;
+  audioText: string;
+  reading: string;
+  translation: string;
+  options: string[];
+  answerIndex: number;
+  explanation: string;
+  tip: string;
+}
+
+/**
+ * Fifteen original short listening drills, three per JLPT level.
+ * They deliberately cover vocabulary recognition, detail, inference, and
+ * nuance without copying commercial question banks or dialogue scripts.
+ */
+export const LISTENING_DRILLS: ListeningDrill[] = [
+  {
+    id: "ld-n5-1",
+    level: "N5",
+    focus: "Lokasi",
+    prompt: "Apa yang ditanyakan orang tersebut?",
+    audioText: "すみません、駅はどこですか。",
+    reading: "すみません、えきはどこですか。",
+    translation: "Permisi, di mana stasiun?",
+    options: ["Lokasi stasiun", "Harga tiket", "Jam keberangkatan kereta", "Nomor telepon"],
+    answerIndex: 0,
+    explanation: "駅（えき）berarti stasiun, dan どこですか menanyakan lokasi.",
+    tip: "Fokus pada kata tanya どこ (di mana).",
+  },
+  {
+    id: "ld-n5-2",
+    level: "N5",
+    focus: "Kosakata",
+    prompt: "Apa yang diminum pembicara setiap pagi?",
+    audioText: "毎朝、パンを食べて、牛乳を飲みます。",
+    reading: "まいあさ、パンをたべて、ぎゅうにゅうをのみます。",
+    translation: "Setiap pagi saya makan roti dan minum susu.",
+    options: ["Air", "Teh", "Susu", "Kopi"],
+    answerIndex: 2,
+    explanation: "牛乳（ぎゅうにゅう）berarti susu; 飲みます berarti minum.",
+    tip: "Bedakan 食べます (makan) dan 飲みます (minum).",
+  },
+  {
+    id: "ld-n5-3",
+    level: "N5",
+    focus: "Detail",
+    prompt: "Mengapa perpustakaan tutup?",
+    audioText: "今日は日曜日です。図書館は休みです。",
+    reading: "きょうはにちようびです。としょかんはやすみです。",
+    translation: "Hari ini hari Minggu. Perpustakaan tutup.",
+    options: ["Karena sedang renovasi", "Karena hari Minggu", "Karena sudah malam", "Karena tidak ada buku"],
+    answerIndex: 1,
+    explanation: "日曜日（にちようび）berarti hari Minggu; 休み（やすみ）berarti libur atau tutup.",
+    tip: "Hubungkan dua kalimat: alasan sering muncul di kalimat pertama.",
+  },
+  {
+    id: "ld-n4-1",
+    level: "N4",
+    focus: "Saran",
+    prompt: "Apa saran pembicara?",
+    audioText: "明日は雨が降るそうです。傘を持って行ったほうがいいですよ。",
+    reading: "あしたはあめがふるそうです。かさをもっていったほうがいいですよ。",
+    translation: "Katanya besok akan hujan. Sebaiknya bawa payung.",
+    options: ["Membawa payung", "Menunda perjalanan", "Memakai jaket tebal", "Pulang lebih awal"],
+    answerIndex: 0,
+    explanation: "〜そうです menyampaikan kabar, dan 〜たほうがいい berarti sebaiknya. 傘（かさ）adalah payung.",
+    tip: "Kenali pola saran 〜たほうがいいです.",
+  },
+  {
+    id: "ld-n4-2",
+    level: "N4",
+    focus: "Waktu",
+    prompt: "Pukul berapa toko tutup pada hari Minggu?",
+    audioText: "この店は午後七時まで開いています。でも、日曜日は五時に閉まります。",
+    reading: "このみせはごごしちじまであいています。でも、にちようびはごじにしまります。",
+    translation: "Toko ini buka sampai pukul 19.00. Namun, hari Minggu tutup pukul 17.00.",
+    options: ["Pukul 19.00", "Pukul 18.00", "Pukul 17.00", "Pukul 07.00"],
+    answerIndex: 2,
+    explanation: "五時（ごじ）adalah pukul lima sore, dan 閉まります berarti tutup. でも menandai pengecualian.",
+    tip: "Catat angka dan nama hari; でも sering memperkenalkan informasi yang berlawanan.",
+  },
+  {
+    id: "ld-n4-3",
+    level: "N4",
+    focus: "Jadwal",
+    prompt: "Kapan Tanaka kembali?",
+    audioText: "田中さんは先週から大阪に出張しています。来週の月曜日に戻ります。",
+    reading: "たなかさんはせんしゅうからおおさかにしゅっちょうしています。らいしゅうのげつようびにもどります。",
+    translation: "Tanaka sedang dinas ke Osaka sejak pekan lalu. Ia kembali Senin pekan depan.",
+    options: ["Pekan lalu", "Minggu ini", "Selasa pekan depan", "Senin pekan depan"],
+    answerIndex: 3,
+    explanation: "来週の月曜日 berarti Senin pekan depan; 戻ります berarti kembali. 出張 berarti dinas luar kota.",
+    tip: "Tandai penanda waktu: 先週 (pekan lalu) dan 来週 (pekan depan).",
+  },
+  {
+    id: "ld-n3-1",
+    level: "N3",
+    focus: "Waktu",
+    prompt: "Kapan rapat dimulai?",
+    audioText: "会議は三時からですが、資料の準備に時間がかかっているので、十分遅れて始めます。",
+    reading: "かいぎはさんじからですが、しりょうのじゅんびにじかんがかかっているので、じゅっぷんおくれてはじめます。",
+    translation: "Rapat dijadwalkan pukul 15.00, tetapi karena persiapan materi memakan waktu, kami mulai terlambat sepuluh menit.",
+    options: ["Pukul 15.10", "Pukul 15.00", "Pukul 15.30", "Pukul 14.50"],
+    answerIndex: 0,
+    explanation: "十分（じゅっぷん）berarti sepuluh menit; 遅れて berarti terlambat. Jadi rapat mulai pukul 15.10.",
+    tip: "Waspadai angka yang berubah karena alasan tambahan.",
+  },
+  {
+    id: "ld-n3-2",
+    level: "N3",
+    focus: "Detail",
+    prompt: "Apa yang diketahui tentang toko roti itu?",
+    audioText: "駅の近くに新しいパン屋ができたんだけど、朝はいつも長い列ができているよ。",
+    reading: "えきのちかくにあたらしいパンやができたんだけど、あさはいつもながいれつができているよ。",
+    translation: "Di dekat stasiun ada toko roti baru, tetapi setiap pagi selalu ada antrean panjang.",
+    options: ["Belum buka", "Hanya menjual kue", "Antrean panjang setiap pagi", "Letaknya jauh dari stasiun"],
+    answerIndex: 2,
+    explanation: "パン屋 berarti toko roti, 列 berarti antrean, dan 駅の近く berarti dekat stasiun.",
+    tip: "Fokus pada 朝はいつも (setiap pagi selalu).",
+  },
+  {
+    id: "ld-n3-3",
+    level: "N3",
+    focus: "Tindakan",
+    prompt: "Apa yang harus dilakukan Yamada?",
+    audioText: "山田さん、部長がお呼びです。今すぐ会議室に来てください。",
+    reading: "やまださん、ぶちょうがおよびです。いますぐかいぎしつにきてください。",
+    translation: "Yamada, manajer memanggil Anda. Tolong segera datang ke ruang rapat.",
+    options: ["Menelepon manajer", "Menunggu di ruang kerja", "Mengirim dokumen", "Segera pergi ke ruang rapat"],
+    answerIndex: 3,
+    explanation: "お呼びです berarti dipanggil (sopan); 今すぐ berarti sekarang juga; 会議室 adalah ruang rapat.",
+    tip: "Kenali permintaan sopan 〜てください.",
+  },
+  {
+    id: "ld-n2-1",
+    level: "N2",
+    focus: "Status",
+    prompt: "Bagaimana kondisi dokumen tersebut?",
+    audioText: "この資料、先週の金曜日までに提出する予定だったんですが、急に別の仕事が入ってしまって、まだ手をつけていません。",
+    reading: "このしりょう、せんしゅうのきんようびまでにていしゅつするよていだったんですが、きゅうにべつのしごとがはいってしまって、まだてをつけていません。",
+    translation: "Dokumen ini seharusnya saya serahkan paling lambat Jumat pekan lalu, tetapi tiba-tiba ada pekerjaan lain, jadi saya belum mengerjakannya.",
+    options: ["Belum dikerjakan", "Sudah dikirim Jumat lalu", "Sedang direvisi", "Sudah selesai tetapi terlambat"],
+    answerIndex: 0,
+    explanation: "手をつけていません berarti belum mulai mengerjakan; 提出 berarti menyerahkan.",
+    tip: "Frasa 手をつける berarti mulai mengerjakan sesuatu.",
+  },
+  {
+    id: "ld-n2-2",
+    level: "N2",
+    focus: "Alasan",
+    prompt: "Mengapa bersepeda mungkin lebih cepat?",
+    audioText: "電車で行くより、自転車のほうが早いかもしれないね。この時間は道が混んでいるから。",
+    reading: "でんしゃでいくより、じてんしゃのほうがはやいかもしれないね。このじかんはみちがこんでいるから。",
+    translation: "Dibanding naik kereta, mungkin lebih cepat naik sepeda. Karena pada jam ini jalanan padat.",
+    options: ["Kereta sering terlambat", "Sepeda lebih murah", "Jalanan padat", "Stasiunnya jauh"],
+    answerIndex: 2,
+    explanation: "道が混んでいる berarti jalanan padat; 〜より〜のほうが berarti dibanding ... lebih ....",
+    tip: "Perhatikan alasan yang ditandai から di akhir kalimat.",
+  },
+  {
+    id: "ld-n2-3",
+    level: "N2",
+    focus: "Kesimpulan",
+    prompt: "Apa yang dapat disimpulkan tentang sikapnya?",
+    audioText: "彼は謝ったものの、何が悪かったのかよく分かっていないようだった。",
+    reading: "かれはあやまったものの、なにがわるかったのかよくわかっていないようだった。",
+    translation: "Meskipun ia sudah meminta maaf, tampaknya ia belum benar-benar paham apa kesalahannya.",
+    options: ["Ia menolak minta maaf", "Ia sudah memperbaiki kesalahan", "Ia marah kepada pembicara", "Ia minta maaf tetapi belum paham kesalahannya"],
+    answerIndex: 3,
+    explanation: "〜ものの berarti meskipun; 分かっていない berarti belum paham.",
+    tip: "〜ものの menandai pertentangan dengan harapan atau pernyataan sebelumnya.",
+  },
+  {
+    id: "ld-n1-1",
+    level: "N1",
+    focus: "Nuansa",
+    prompt: "Apa penilaian pembicara terhadap sambutan itu?",
+    audioText: "部長の挨拶は、形式的なものに終始したきらいがある。現場の課題に触れることはなかった。",
+    reading: "ぶちょうのあいさつは、けいしきてきなものにしゅうししたきらいがある。げんばのかだいにふれることはなかった。",
+    translation: "Sambutan manajer cenderung hanya bersifat formal dari awal sampai akhir. Ia tidak menyinggung masalah di lapangan.",
+    options: ["Terlalu panjang tetapi bermanfaat", "Terlalu formal dan tidak membahas masalah nyata", "Sangat emosional", "Membahas solusi konkret"],
+    answerIndex: 1,
+    explanation: "〜きらいがある menyiratkan kecenderungan yang dinilai kurang baik; 現場の課題 berarti masalah di lapangan.",
+    tip: "〜きらいがある bukan pujian; perhatikan nada penilaian negatifnya.",
+  },
+  {
+    id: "ld-n1-2",
+    level: "N1",
+    focus: "Kekhawatiran",
+    prompt: "Apa kekhawatiran pembicara?",
+    audioText: "この計画、予算の面では問題ないにしても、人手が足りないことには変わりがないだろう。",
+    reading: "このけいかく、よさんのめんではもんだいないにしても、ひとでがたりないことにはかわりがないだろう。",
+    translation: "Rencana ini, meskipun dari sisi anggaran tidak ada masalah, tetap saja akan kekurangan tenaga.",
+    options: ["Kekurangan tenaga tetap menjadi masalah", "Anggarannya tidak cukup", "Rencana harus dibatalkan", "Waktunya tidak cukup"],
+    answerIndex: 0,
+    explanation: "人手が足りない berarti kekurangan tenaga; 〜にしても berarti meskipun; 変わりがない berarti tidak berubah.",
+    tip: "Fokus pada klausa setelah にしても: masalahnya bukan anggaran.",
+  },
+  {
+    id: "ld-n1-3",
+    level: "N1",
+    focus: "Sikap",
+    prompt: "Apa sikap pembicara?",
+    audioText: "彼女がそこまで言うなら、こちらにも考えがある。一概に譲るわけにはいかない。",
+    reading: "かのじょがそこまでいうなら、こちらにもかんがえがある。いちがいにゆずるわけにはいかない。",
+    translation: "Kalau dia berbicara sampai sejauh itu, saya juga punya pertimbangan. Saya tidak bisa begitu saja mengalah.",
+    options: ["Setuju sepenuhnya", "Akan berhenti berdiskusi", "Tidak peduli sama sekali", "Tidak bisa langsung mengalah"],
+    answerIndex: 3,
+    explanation: "一概に berarti begitu saja atau secara umum; 譲る berarti mengalah; わけにはいかない menyatakan batasan kuat.",
+    tip: "〜わけにはいかない bukan sekadar tidak mau, tetapi tidak bisa/mestinya tidak dilakukan.",
+  },
+];
+
+export function listeningDrillsForLevel(level: JLPTLevel | "semua"): ListeningDrill[] {
+  if (level === "semua") return LISTENING_DRILLS;
+  return LISTENING_DRILLS.filter((drill) => drill.level === level);
+}
